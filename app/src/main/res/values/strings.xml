@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">心安时刻提醒</string>
+    <string name="accessibility_service_description">
+        本服务将监控微信、QQ 等主流通讯软件的使用行为，在你使用社交应用的过程中定时发出提醒，引导你理性沟通、平稳心态，有效降低不能及时回复信息对社交和生活的影响。
+    </string>
+</resources>

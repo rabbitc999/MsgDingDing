@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:padding="16dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:fitsSystemWindows="true"
+        android:padding="16dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="及时回复消息提醒守护设置"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="24dp"
+            android:textColor="#2196F3"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="监控应用包名 (用逗号分隔):"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"/>
+        <EditText
+            android:id="@+id/et_package_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="例如: com.tencent.mobileqq,com.tencent.mm"
+            android:inputType="textMultiLine"
+            android:minLines="2"
+            android:maxLines="4"
+            android:scrollbars="vertical"
+            android:layout_marginBottom="16dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="默认包含QQ和微信及时回复消息提醒"
+            android:textColor="#FF0000"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提醒间隔时间 (秒):"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"/>
+        <EditText
+            android:id="@+id/et_reminder_interval"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="默认60秒"
+            android:inputType="number"
+            android:layout_marginBottom="16dp"/>
+        <Button
+            android:id="@+id/btn_start_service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="启动服务"/>
+    </LinearLayout>
+</LinearLayout>
